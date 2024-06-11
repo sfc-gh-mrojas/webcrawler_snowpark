@@ -1,0 +1,12 @@
+definition_version: 1
+snowpark:
+  project_name: "my_snowpark_project"
+  stage_name: "dev_deployment"
+  src: "app/"
+  procedures:
+    - name: webscrape_procedure
+      handler: "procedures.webscrape_procedure"
+      signature: ""
+      returns: variant
+      external_access_integrations:
+        - sample_access_integration
